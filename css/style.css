@@ -6,6 +6,7 @@
 
 #main-navbar {
   background-color: pink;
+  overflow: hidden;
 }
 
 #navbar-container {
@@ -13,4 +14,28 @@
   position: relative;
   /*text-align only works if you turn thr content into inline-block*/
   text-align: center;
+}
+
+#main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*inline-block treats it like inline text so text-align works on it */
+  display: inline-block;
+  vertical-align: top;
+}
+
+#main-navbar ul li {
+  float: left;
+}
+
+#main-navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-navbar ul li a:hover {
+  text-decoration: underline;
 }
