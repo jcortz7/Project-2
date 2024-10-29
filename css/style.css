@@ -39,3 +39,7 @@
 #main-navbar ul li a:hover {
   text-decoration: underline;
 }
+
+#main-navbar #onpage {
+  text-decoration: underline;
+}
